@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+i {
+    cursor: pointer;
+}
+
+.main-container {
+    
+}
+
+
+/* @media (width: 414px) {
+    .content .shorts .reals .box {
+        margin-left: auto;
+    }
+} */
+
+
+/* Start Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    
+}
+.header .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+}
+.header .first i.fa-bars {
+    margin: 0  10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header .first span {
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+.header .first span sup {
+    font-weight: lighter;
+    font-size: 10px;
+}
+.header .first i.fa-youtube {
+    color: red;
+    font-size: 25px;
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.header .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+.header .second div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 10px 20px;
+}
+.header .second div input {
+    width: 90%;
+    padding: 10px 5px 10px 13px;
+    outline: none;
+    border: 1px solid rgb(206, 206, 206);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+}
+.header .second div span {
+    cursor: pointer;
+    color: rgb(163, 163, 163);
+    border: 1px solid rgb(206, 206, 206);
+    width: 10%;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 30px;
+    transition: 0.3s;
+}
+.header .second div span:hover {
+    border-color: rgb(189, 189, 189);
+}
+
+.header .second i {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    padding: 20px;
+}
+.header .second i:hover {
+    background-color: rgba(224, 224, 224, 0.911);
+}
+.header .third {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    padding: 0 20px;
+}
+.header .third i.Notifications {
+    font-size: 20px;
+}
+.header .third span {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    padding: 18px;
+    background-color: #075e54;
+    color: white;
+}
+@media (max-width: 750px) {
+    .header  {
+        
+    }
+    .header .first span {
+        font-size: 10px;
+    }
+    .header .first i.fa-youtube,
+    .header .first i.fa-bars {
+        font-size: 16px;
+    }
+    .header .first span sup {
+        display: none;
+    }
+    .header .first i.fa-bars {
+        margin: 0;
+    }
+    .header .third span {
+        display: flex;
+        padding: 10px;
+        width: 5px;
+        height: 5px;
+        font-size: 10px;
+    }
+    .header .third i.Notifications {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .header .second i {
+        font-size: 10px;
+    }
+    .header .second .searchBtn span {
+        display: flex;
+        padding: 5px 1px;
+        font-size: 10px;
+        width: 25px;
+    }
+    .header .second .searchBtn input {
+        width: 50px;
+        padding: 10px;
+    }
+    .header .second .searchBtn input::placeholder {
+        font-size: 10px;
+    }
+    
+}
+/* End Header */
+
+/* start left Mini menu  */
+.leftMiniMenu {
+    width: 75px;
+    display: none;
+    transition: 0.3s;
+    margin-left: 7px;
+}
+.leftMiniMenu div {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.leftMiniMenu div span { 
+    display: block;
+}
+.leftMiniMenu div span.word  {
+    font-size: 10px;
+    margin-bottom: 35px ;
+    margin-top: 10px;
+}
+@media (max-width: 900px) {
+    .leftMiniMenu {
+        display: block;
+        width: 50px;
+        text-align: center;
+    }
+    .leftMiniMenu div span.word.Subscriptions {
+        font-size: 7px;
+    }
+}
+/* End left Mini menu  */
+/* Start left Larg menu  */
+.leftLargMenu {
+    width: 300px;
+    overflow: scroll;
+    height: 1030px;
+    margin: 0;
+    overflow-x: hidden;
+}
+@media (max-width: 1050px) {
+    .leftLargMenu {
+        display: none;
+    }
+}
+.leftLargMenu::-webkit-scrollbar {
+    width: 8px;
+}
+.leftLargMenu::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 50px;
+}
+.leftLargMenu::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.leftLargMenu .boxOne,
+.leftLargMenu .boxTow  {
+    padding: 10px 20px;
+}
+.leftLargMenu .boxOne div,
+.leftLargMenu .boxTow div {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftLargMenu .boxOne div:hover,
+.container .content .navBar div:hover {
+    background-color: rgb(228, 228, 228);
+    border-radius: 6px;
+}
+.leftLargMenu .boxOne i,
+.leftLargMenu .boxOne div img {
+    margin-right: 20px;
+}
+.leftLargMenu .boxOne div span {
+    flex: 1;
+}
+.fa-youtube {
+    color: red;
+}
+/* End left Larg menu  */
+
+/* start Content  */
+
+
+/* @media (max-width: 750px) {
+    .container {
+        width: 518px;
+        height: 124vh;
+    }
+} */
+
+.container {
+    display: flex;
+    max-height: 94vh;
+    position: relative;
+}
+.container .content {
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 30px;
+}
+.container .content .navBar {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.navBar::-webkit-scrollbar {
+    height: 8px;
+}
+.navBar::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 50px;
+}
+.navBar::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.container .content .navBar div {
+    text-align: center;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+.container .content .navBar div span {
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin-right: 70px;
+    padding-top: 5px;
+}
+@media (max-width: 750px) {
+    .container .content .navBar div span {
+        font-size: 12px;
+        width: 79%;
+        margin-right: 36px;
+    }
+}
+.container .content .navBar .lists {
+
+    background-color: black;
+    padding: 3px 12px 7px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.container .content .navBar .lists span.active {
+    color: white;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start videos and shorts */
+.content .videos-shorts {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+@media (max-width: 750px) {
+    .content .videos-shorts {
+        margin: 0;
+    }
+} 
+.content .videos-shorts .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content .videos-shorts .videos .box {
+    width: 370px;
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.content .videos-shorts .videos .box iframe {
+    border-radius: 10px;
+    height: 215px;
+}
+.content .videos-shorts .videos .box .big {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+}
+.content .videos-shorts .videos .box .big img {
+    height: 40px;
+    margin-top: 20px;
+}
+.content .videos-shorts .videos .box .small {
+    position: relative;
+    top: -27px;
+    left: 7px;
+}
+.content .videos-shorts .videos .box span {
+    display: block;
+}
+
+
+.content .shorts {
+    margin: 30px 0;
+    position: relative;
+}
+.content .shorts::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(219, 218, 218);
+    top: -40px;
+    left: 0;
+}
+.content .shorts .shortslogo {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .shorts .shortslogo span {
+    display: block;
+    flex: 1;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.content .shorts .reals {
+    display: flex;
+    justify-content: last baseline;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+.content .shorts .reals .box {
+    font-size: 14px;
+    width: 184px;
+}
+
+/* End videos and shorts */
+
+
+/* End Content  */
